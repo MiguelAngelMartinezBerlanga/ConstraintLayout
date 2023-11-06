@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+
+        android:id="@+id/negro"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+
+    <View
+        android:id="@+id/cuadradoAzulIzArr"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/teal_700"
+        app:layout_constraintBottom_toTopOf="@id/negro"
+        app:layout_constraintEnd_toStartOf="@id/negro"
+
+       />
+
+    <View
+        android:id="@+id/cuadradoAzulDerArr"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/teal_700"
+        app:layout_constraintStart_toEndOf="@id/negro"
+        app:layout_constraintBottom_toTopOf="@id/negro"
+
+        />
+
+
+    <View
+        android:id="@+id/cuadradoAzulIzAbaj"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@id/negro"
+        app:layout_constraintEnd_toStartOf="@id/negro"
+        />
+
+
+    <View
+        android:id="@+id/cuadradoAzulDerAbaj"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@id/negro"
+        app:layout_constraintStart_toEndOf="@id/negro"
+        />
+
+    <View
+        android:id="@+id/cuadradomoradoArrCentro"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/purple_500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/negro"
+        android:layout_marginVertical="50dp"
+
+        />
+
+    <View
+        android:id="@+id/cuadradomoradoAbajIzqui"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/purple_500"
+        app:layout_constraintTop_toBottomOf="@id/cuadradoAzulIzAbaj"
+        app:layout_constraintEnd_toStartOf="@id/cuadradoAzulIzAbaj"
+
+
+        />
+
+    <View
+        android:id="@+id/cuadradomoradoAbajCentro"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/purple_500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/negro"
+        android:layout_marginVertical="50dp"
+
+        />
+
+
+    <View
+        android:id="@+id/cuadradomoradoAbajDere"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/purple_500"
+        app:layout_constraintTop_toBottomOf="@id/cuadradoAzulDerAbaj"
+        app:layout_constraintStart_toEndOf="@id/cuadradoAzulDerAbaj"
+
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
